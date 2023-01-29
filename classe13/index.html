@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulación del DOM básica - Curso Práctico de JavaScript</title>
+</head>
+<body>
+  <h1>Manipulación del DOM básica</h1>
+
+  <form id="form">
+    <input id="calculo1" placeholder="Escribe algo aquí" />
+    <input id="calculo2" placeholder="Escribe algo aquí" />
+    <button type="button" id="btnCalcular">Calcular</button>
+
+    <p id="result"></p>
+  </form>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
+<!-- La linea 15 tiene 2 posibles soluciones debido a que hay 2 formas de solucionar el
+boton de un form
+1. La mas fácil es colocarle al button el atributo 'type' y especificarle que tenga
+   el valor 'button'. De dicha forma conseguiremos que el boton utilizado no funcione 
+   como 'submit' que es el modo en el que trabaja cuando no se le especifica el tipo
+   al button y al ser el ultimo en un formulario se le coloca el tipo submit de manera
+   automatica. Asi ya conseguimos que se ejecute el '.addEventListener()' en nuestro .js
+   Entonces la linea 15 en este caso queda:
+   <button type="button" id="btnCalcular">Calcular</button>
+
+
+2. La mas dicil es dejar la linea 15 sin el tipo y por ende se colocaria de manera
+   automatica el submit ya que es el ultimo button que se encuentra en el form,
+   aqui se vera lindo y fácil pero en el .js se encontrara lo "trambolico" jsjsjs.
+   Al final, la linea 15 quedaría así:
+   <button id="btnCalcular">Calcular</button> -->
