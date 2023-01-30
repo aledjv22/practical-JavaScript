@@ -1,4 +1,4 @@
-# Resumen de la clase 11 - Eventos
+# Resumen de la clase 12 - Eventos
 
 ### En HTML :
 
